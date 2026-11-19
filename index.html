@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Type Master</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="typing-box">
+    <h1>Type Master</h1>
+    <p>Type the sentence below.</p>
+
+    <p id="sentence" class="sentence" aria-label="Sentence to type"></p>
+
+    <label for="typing-input">Your typing</label>
+    <input
+      id="typing-input"
+      type="text"
+      autocomplete="off"
+      aria-describedby="message"
+    >
+
+    <p id="message" class="message" aria-live="polite"></p>
+    <button id="restart-button" type="button">Restart</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
